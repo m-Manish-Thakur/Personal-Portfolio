@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       
-        <div id='app-home'  style={{backgroundImage: 'url("Images/pattern1.png")'}}>
+        <div id='app-home'>
             <BrowserRouter>
             <Header />
               <Right_page />

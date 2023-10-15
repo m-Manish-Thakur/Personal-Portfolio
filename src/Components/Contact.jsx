@@ -1,8 +1,23 @@
 import React from 'react'
 import  './Style.css';
+import { useForm, ValidationError } from '@formspree/react';
 
 
 const Contact = () => {
+
+  const [state, handleSubmit] = useForm("mjvqklqv");
+  if (state.succeeded) {
+      return  <>
+                  <div id='afterSubmit'>
+                    {/* <img src="https://cdn.dribbble.com/users/147386/screenshots/5315437/success-tick-dribbble.gif" /> */}
+                    <img src="https://cdn.dribbble.com/users/2121936/screenshots/4814257/ezgif-1-64fc188f39.gif" alt="" />
+                    <h1>Thanks you!</h1>
+                    <p>Your Submission has been sent.</p>
+                  </div>
+              </>
+  }
+
+
   return (
     <>
         <div id="contact">
@@ -34,11 +49,17 @@ const Contact = () => {
                       
                       </div>
                 
-                      <form action="#">
-                        <input type="text" placeholder='Your Name..' required/><br />
-                        <input type="text" placeholder='Your Email..' required/>
-                        <textarea cols="30" rows="5" placeholder='Your Message..' required></textarea><br />
-                        <button>Submit</button>
+                      <form onSubmit={handleSubmit}>
+                        <input type="text" id='name' name='Name' placeholder='Your Name..' required/><br />
+                        <ValidationError prefix="Name" field="name" errors={state.errors}/>
+
+                        <input type="email" id='email' name='Email' placeholder='Your Email..' required/>
+                        <ValidationError prefix="Email" field="Email" errors={state.errors}/>
+
+                        <textarea cols="30" rows="5" id='message' name='Message' placeholder='Your Message..' required></textarea><br />
+                        <ValidationError prefix="Message" field="message" errors={state.errors}/>
+
+                        <button type='submit' disabled={state.submitting}>Submit</button>
                       </form>
 
                 </div>

@@ -1,17 +1,6 @@
-import React, {useEffect} from 'react'
-// AOS Animation 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react'
 
 const Portfolio = () => {
-
-
-    useEffect(() => {
-        AOS.init();
-      }, [])
-    
-
-
 
   return (
     <>
@@ -20,7 +9,7 @@ const Portfolio = () => {
                         <h2>Recent completed works</h2>
 
                         <div className='portfolio_con'>
-                            <div className="item" data-aos="zoom-in" data-aos-duration="1500">
+                            <div className="item" >
                                 <div>
                                     <img src="Images/amazon.jpg" />
                                 </div>
@@ -32,7 +21,7 @@ const Portfolio = () => {
                                 </div>
                             </div>
 
-                            <div className="item" data-aos="zoom-in" data-aos-duration="1500">
+                            <div className="item" >
                                 <div>
                                     <img src="Images/tesla.jpg" />
                                 </div>
