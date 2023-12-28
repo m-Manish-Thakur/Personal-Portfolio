@@ -42,7 +42,7 @@ const Header = () => {
         <div class="offcanvas-body" id="menu_box">
           <div className="item1">
             <img
-              src="Images/small.jpg"
+              src="https://media.licdn.com/dms/image/D5603AQEati8qnaqRIQ/profile-displayphoto-shrink_400_400/0/1700218604767?e=1709164800&v=beta&t=IamStK4TstWdoc855K1fUvtlpdv1kp2UQye8Max-0iY"
               width="95px"
               height="95px"
               style={{
@@ -53,60 +53,35 @@ const Header = () => {
             <h3>Manish Thakur</h3>
           </div>
           <div className="nav">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? "active_Link" : "diactive_link"
-              }
-            >
+            <NavLink to="/" className={({ isActive }) => (isActive ? "active_Link" : "diactive_link")}>
               <a href="#">
                 <span data-bs-dismiss="offcanvas" aria-label="Close">
                   Home
                 </span>
               </a>
             </NavLink>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive ? "active_Link" : "diactive_link"
-              }
-            >
+            <NavLink to="/about" className={({ isActive }) => (isActive ? "active_Link" : "diactive_link")}>
               <a href="#">
                 <span data-bs-dismiss="offcanvas" aria-label="Close">
                   About
                 </span>
               </a>
             </NavLink>
-            <NavLink
-              to="/services"
-              className={({ isActive }) =>
-                isActive ? "active_Link" : "diactive_link"
-              }
-            >
+            <NavLink to="/services" className={({ isActive }) => (isActive ? "active_Link" : "diactive_link")}>
               <a href="#">
                 <span data-bs-dismiss="offcanvas" aria-label="Close">
                   Services
                 </span>
               </a>
             </NavLink>
-            <NavLink
-              to="/portfolio"
-              className={({ isActive }) =>
-                isActive ? "active_Link" : "diactive_link"
-              }
-            >
+            <NavLink to="/portfolio" className={({ isActive }) => (isActive ? "active_Link" : "diactive_link")}>
               <a href="#">
                 <span data-bs-dismiss="offcanvas" aria-label="Close">
                   Portfolio
                 </span>
               </a>
             </NavLink>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                isActive ? "active_Link" : "diactive_link"
-              }
-            >
+            <NavLink to="/contact" className={({ isActive }) => (isActive ? "active_Link" : "diactive_link")}>
               <a href="#">
                 <span data-bs-dismiss="offcanvas" aria-label="Close">
                   Contact
@@ -117,10 +92,7 @@ const Header = () => {
 
           <div className="social_link">
             <div>
-              <a
-                href="https://www.linkedin.com/in/manish-thakur-%F0%9F%87%AE%F0%9F%87%B3-9a6877235/"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/in/manish-thakur-%F0%9F%87%AE%F0%9F%87%B3-9a6877235/" target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
               <a href="https://github.com/Manishthakur231690" target="_blank">
