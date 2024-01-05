@@ -33,7 +33,7 @@
   font-family: "montserrat", sans-serif;
   text-align: center;
   color: var(--dark-color);
-  margin-top: 10px;
+  margin-top: 15px;
   font-weight: 700;
   font-size: 16.5px;
   letter-spacing: 0.1px;
@@ -72,15 +72,11 @@
 #Right_nav .social_link i {
   width: 40px;
   font-size: 20px;
-  color: #130f49;
+  color: white;
   padding: 10px;
   margin: 0 8px;
-  background: rgba(236, 252, 255, 0.865);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 5px;
-  border-right: 1px solid rgba(0, 0, 0, 0.32);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.304);
+  background-color: #282856;
+  border-radius: 50%;
   margin-bottom: 5px;
 }
 #Right_nav .social_link i:hover {
@@ -152,7 +148,7 @@
   letter-spacing: 1.5px;
 }
 #Main .main_content h1 {
-  font-size: 4vw;
+  font-size: 3.8vw;
   font-family: "josefin sans";
   line-height: 4.5vw;
   font-weight: 700;
@@ -313,20 +309,21 @@
   }
   #Main .main_content {
     width: 100vw;
-    padding: 30px 3vw 50px 3vw;
+    padding: 50px 3vw 50px 3vw;
   }
   #Main .main_content h1 {
     font-size: 40px;
     line-height: 85px;
-    letter-spacing: 0;
+    letter-spacing: -1px;
   }
   #Main .main_content .button_group {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 4vw;
   }
   #Main .main_content .button_group .btn2 {
-    margin-left: 15px;
+    margin-left: 0;
     background-color: transparent;
     color: #5e65e7;
   }
@@ -610,46 +607,44 @@
 #portfolio .portfolio_con .item h2 {
   font-size: 23px;
   color: #130f49;
-  font-family: var(--inter-font);
+  font-family: "montserrat";
   font-weight: 700;
   margin-top: 15px;
   letter-spacing: 0.5px;
 }
+#portfolio .portfolio_con .item h2 span {
+  font-size: 13px;
+}
 #portfolio .portfolio_con .item p {
   color: var(--main-color);
   font-size: 15px;
-  font-family: var(--main-font);
+  font-family: "Space Grotesk";
   line-height: 25px;
   margin-top: 10px;
   letter-spacing: 0.3px;
 }
-#portfolio .portfolio_con .item .buttons {
-  display: flex;
-  align-items: center;
+#portfolio .portfolio_con .item button {
+  font-family: "Space Grotesk";
   margin-top: 20px;
-}
-#portfolio .portfolio_con .item .buttons button {
-  padding: 12px 20px;
-  background: linear-gradient(to left top, rgba(248, 241, 254, 0.5), rgba(203, 249, 255, 0.756));
-  backdrop-filter: blur(20px);
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1.5px solid rgba(164, 189, 205, 0.493);
-  border-right: 1.5px solid rgba(164, 189, 205, 0.493);
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
   color: #130f49;
-  border-radius: 10px;
-  font-family: var(--main-font);
-  font-size: 15px;
-  letter-spacing: 0.3px;
-  display: flex;
-  align-items: center;
 }
-#portfolio .portfolio_con .item .buttons button:hover {
-  background: linear-gradient(to left top, rgba(248, 241, 254, 0.5), rgba(255, 214, 90, 0.829));
-  cursor: pointer;
+#portfolio .portfolio_con .item button i {
+  border: 1px solid var(--dark-color);
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 8px;
+  margin-left: 5px;
 }
-#portfolio .portfolio_con .item .buttons button i {
-  margin-right: 10px;
+
+#portfolio .portfolio_con .item button #arrow {
+  transform: rotate(-45deg);
+}
+#portfolio .portfolio_con .item button:hover #arrow {
+  background-color: var(--dark-color);
+  color: wheat;
 }
 
 @media screen and (max-width: 1250px) {

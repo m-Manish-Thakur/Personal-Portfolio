@@ -6,10 +6,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
-import About from "./About";
-import Portfolio from "./Portfolio";
-import Services from "./services";
-import Contact from "./Contact";
 
 const Main = () => {
   useEffect(() => {
@@ -57,10 +53,9 @@ const Main = () => {
             </p>
 
             <div className="button_group">
-              <Link to="/contact">
+              <Link to="/about">
                 <button className="btn1">
-                  {" "}
-                  Say Hello <i class="fa-regular fa-paper-plane"></i>
+                  About Me <i class="fa-regular fa-paper-plane"></i>
                 </button>
               </Link>
               <Link to="/portfolio">

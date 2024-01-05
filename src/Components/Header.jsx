@@ -49,6 +49,7 @@ const Header = () => {
                 border: "3px solid rgb(30, 126, 185)",
                 borderRadius: "50%",
               }}
+              alt="Me"
             />
             <h3>Manish Thakur</h3>
           </div>
@@ -95,7 +96,7 @@ const Header = () => {
               <a href="https://www.linkedin.com/in/manish-thakur-%F0%9F%87%AE%F0%9F%87%B3-9a6877235/" target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
-              <a href="https://github.com/Manishthakur231690" target="_blank">
+              <a href="https://github.com/m-Manish-Thakur" target="_blank">
                 <i class="fa-brands fa-github" target="_blank"></i>
               </a>
               <a href="mailto: manishthakur231690@gmail.com" target="_blank">
