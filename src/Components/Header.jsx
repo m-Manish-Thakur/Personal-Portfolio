@@ -42,7 +42,7 @@ const Header = () => {
         <div class="offcanvas-body" id="menu_box">
           <div className="item1">
             <img
-              src="https://media.licdn.com/dms/image/D5603AQEati8qnaqRIQ/profile-displayphoto-shrink_400_400/0/1700218604767?e=1709164800&v=beta&t=IamStK4TstWdoc855K1fUvtlpdv1kp2UQye8Max-0iY"
+              src="Images/ME.jpg"
               width="95px"
               height="95px"
               style={{
