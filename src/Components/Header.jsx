@@ -42,7 +42,7 @@ const Header = () => {
         <div class="offcanvas-body" id="menu_box">
           <div className="item1">
             <img
-              src="Images/ME.jpg"
+              src="Images/small.jpeg"
               width="95px"
               height="95px"
               style={{

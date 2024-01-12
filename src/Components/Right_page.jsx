@@ -8,11 +8,11 @@ const Right_page = () => {
       <div id="Right_nav">
         <div className="item1">
           <img
-            src="Images/ME.jpg"
+            src="Images/small.jpeg"
             width="95px"
             height="95px"
             style={{ border: "3px double rgb(30, 126, 185)", borderRadius: "50%" }}
-            alt="me"
+            // alt="me"
           />
           <h3>Manish Thakur</h3>
         </div>
